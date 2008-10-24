@@ -1,3 +1,5 @@
+#-----.zshrc----#
+
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _complete _approximate

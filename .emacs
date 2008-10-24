@@ -16,14 +16,14 @@
 ;;;;;;; Standart stuff ;;;;;;;;
 
 (ido-mode t)				;Filename Completion
-(line-number-mode)
-(column-number-mode)
-(size-indication-mode) 			;Filesize
-(menu-bar-mode nil)
+(line-number-mode t)
+(column-number-mode t)
+(size-indication-mode t) 		;Filesize
+(menu-bar-mode 0)
 (transient-mark-mode t)			;Make selection visible
 (fset 'yes-or-no-p 'y-or-n-p)
 (global-font-lock-mode t)
-(set-language-enviroment "UTF-8")
+(set-language-environment "UTF-8")
 (setq inhibit-startup-message t)
 (auto-fill-mode t)
 (add-hook 'text-mode-hook 'auto-fill-mode)
@@ -32,8 +32,11 @@
 ;;;;;;; Indention stuff ;;;;;;;;;;
 
 (setq standard-indent 4)
-
+(setq-default indent-tabs-mode nil)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
 
 ;;;;;;;;;;;;;;; Autosave and Backup directories ;;;;;;;;;;;;;;;;;;
 ;; Put autosave files (ie #foo#) in one place, *not*                            ;; scattered all over the file system!                                                                                                                     
