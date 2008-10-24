@@ -14,6 +14,12 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
+#### Promopt #################
+export PROMPT="%n@%m %c %# "
+##############################
+
 ####Aliases###################
 alias ls='ls --color=auto'
+alias cd='cd $1; ls $1'
+alias poweroff='sudo poweroff'
 ##############################

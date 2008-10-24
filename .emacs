@@ -39,7 +39,8 @@
 
 
 ;;;;;;;;;;;;;;; Autosave and Backup directories ;;;;;;;;;;;;;;;;;;
-;; Put autosave files (ie #foo#) in one place, *not*                            ;; scattered all over the file system!                                                                                                                     
+;; Put autosave files (ie #foo#) in one place, *not*
+;; scattered all over the file system!
 (defvar autosave-dir
  (concat "~/.emacs.d/autosaves/" (user-login-name) "/"))
 
