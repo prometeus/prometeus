@@ -14,12 +14,30 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
-#### Promopt #################
-export PROMPT="%n@%m %c %# "
-##############################
+
 
 ####Aliases###################
 alias ls='ls --color=auto'
-alias cd='cd $1; ls $1'
 alias poweroff='sudo poweroff'
+##############################
+
+
+BROWSER='firefox'
+
+##### Color Thing ############
+    autoload colors zsh/terminfo
+    if [[ "$terminfo[colors]" -ge 8 ]]; then
+   colors
+    fi
+    for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE; do
+   eval PR_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
+   eval PR_LIGHT_$color='%{$fg[${(L)color}]%}'
+   (( count = $count + 1 ))
+    done
+    PR_NO_COLOR="%{$terminfo[sgr0]%}"
+##############################
+
+##### Colorful Prompt ########
+PS1="$PR_LIGHT_RED|-$PR_LIGHT_GREEN%n@%m$PR_LIGHT_YELLOW  %t / %D $PR_LIGHT_RED--------------------------------$PR_LIGHT_CYAN%N$PR_LIGHT_RED---|
+|%d$ > $PR_NO_COLOR"
 ##############################
