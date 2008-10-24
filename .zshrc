@@ -39,5 +39,5 @@ BROWSER='firefox'
 
 ##### Colorful Prompt ########
 PS1="$PR_LIGHT_RED|-$PR_LIGHT_GREEN%n@%m$PR_LIGHT_YELLOW  %t / %D $PR_LIGHT_RED--------------------------------$PR_LIGHT_CYAN%N$PR_LIGHT_RED---|
-|%d$ > $PR_NO_COLOR"
+|%d > $PR_NO_COLOR"
 ##############################
