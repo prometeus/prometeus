@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Home</title>
+  </head>
+
+  <body>
+    
+    <div id="menu">
+      <form action="index.php" method="post">
+        <p>Username<br />
+        <input type="text" name="username" size="10" /><br />
+        Password<br />
+        <input type="password" name="password" size="10" /><br />
+        <input type="submit" value="Login" /></p>
+      </form>
+      <?php
+	if( $_POST[username] ){
+          echo "You tried to login dont you";
+       
+        }
+      ?>
+    </div>
+    <div id="main">
+      
+    </div>
+    
+  </body>
+</html>
