@@ -20,6 +20,7 @@
 (column-number-mode t)
 (size-indication-mode t) 		;Filesize
 (menu-bar-mode 0)
+(tool-bar-mode 0)
 (transient-mark-mode t)			;Make selection visible
 (fset 'yes-or-no-p 'y-or-n-p)
 (global-font-lock-mode t)
@@ -32,7 +33,8 @@
 ;;;;;;; Indention stuff ;;;;;;;;;;
 
 (setq standard-indent 4)
-(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode 0)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -60,3 +62,7 @@
 (setq backup-directory-alist (list (cons "." backup-dir)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;; Nxhtml Mode ;;;;;;;;;;
+(load "~/.emacs.d/nxhtml/autostart.el")
+(tabkey2-mode t)

@@ -19,7 +19,9 @@ bindkey -e
 ####Aliases###################
 alias ls='ls --color=auto'
 alias poweroff='sudo poweroff'
-##############################
+alias lampp='sudo /opt/lampp/lampp start'
+alias ll='ls -l --color=auto'
+################################
 
 
 BROWSER='firefox'
@@ -38,6 +40,6 @@ BROWSER='firefox'
 ##############################
 
 ##### Colorful Prompt ########
-PS1="$PR_LIGHT_RED|-$PR_LIGHT_GREEN%n@%m$PR_LIGHT_YELLOW  %t / %D $PR_LIGHT_RED--------------------------------$PR_LIGHT_CYAN%N$PR_LIGHT_RED---|
+PS1="$PR_LIGHT_RED|-$PR_LIGHT_GREEN%n@%m$PR_LIGHT_YELLOW  %t / %D $PR_LIGHT_RED----$PR_LIGHT_CYAN%N$PR_LIGHT_RED---|
 |%d > $PR_NO_COLOR"
 ##############################
