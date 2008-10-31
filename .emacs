@@ -66,3 +66,15 @@
 ;;;;;; Nxhtml Mode ;;;;;;;;;;
 (load "~/.emacs.d/nxhtml/autostart.el")
 (tabkey2-mode t)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;; Git Support ;;;;;;;;;
+
+(setq load-path (cons (expand-file-name "/usr/share/doc/git-core/contrib/emacs") load-path))
+(require 'vc-git)
+(when (featurep 'vc-git) (add-to-list 'vc-handled-backends 'git))
+(require 'git)
+(setq git-commiter-name "prometeus")
+(setq git-commiter-email "prometeusss@gmail.com")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
