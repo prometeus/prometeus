@@ -90,3 +90,7 @@
 (setq git-commiter-email "prometeusss@gmail.com")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;; Tramp Mode ;;;;;;;;;;
+(setq tramp-default-method "ssh")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
