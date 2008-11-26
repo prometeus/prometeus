@@ -94,3 +94,11 @@
 ;;;;;;; Tramp Mode ;;;;;;;;;;
 (setq tramp-default-method "ssh")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;; Smarty Mode ;;;;;;;;;
+(load "~/.emacs.d/smarty-mode.el")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;; C-H as backspace ;;;;
+(define-key global-map "\C-h" 'backward-delete-char)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
