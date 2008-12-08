@@ -13,7 +13,12 @@
 (set-face-background 'region "#66D9EF")
 (set-face-foreground 'font-lock-constant-face "#66d9ef") 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;; Standart stuff ;;;;;;;;
+
+;;;;;;;;;;Font- Terminus 16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(set-default-font "-xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso8859-9")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;; Standart stuff ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (ido-mode t)				;Filename Completion
 (line-number-mode t)
@@ -28,9 +33,9 @@
 (setq inhibit-startup-message t)
 (auto-fill-mode t)
 (add-hook 'text-mode-hook 'auto-fill-mode)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;;; Indention stuff ;;;;;;;;;;
+;;;;;;; Indention stuff ;;;;;;;;;;;;;;;;;;;;;
 
 (setq standard-indent 4)
 (setq-default indent-tabs-mode 0)
@@ -47,12 +52,12 @@
                 (setq indent-tabs-mode t)
                 (setq c-indent-level 4))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 
 
-;;;;;;;;;;;;;;; Autosave and Backup directories ;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;; Autosave and Backup directories ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Put autosave files (ie #foo#) in one place, *not*
 ;; scattered all over the file system!
 (defvar autosave-dir
@@ -73,14 +78,14 @@
 (defvar backup-dir (concat "~/.emacs.d/backups/" (user-login-name) "/"))
 (setq backup-directory-alist (list (cons "." backup-dir)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;; Nxhtml Mode ;;;;;;;;;;
+;;;;;; Nxhtml Mode ;;;;;;;;;;;;;;;;;;;;
 (load "~/.emacs.d/nxhtml/autostart.el")
 (tabkey2-mode t)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;;; Git Support ;;;;;;;;;
+;;;;;;; Git Support ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq load-path (cons (expand-file-name "/usr/share/doc/git-core/contrib/emacs") load-path))
 (require 'vc-git)
@@ -89,7 +94,7 @@
 (setq git-commiter-name "prometeus")
 (setq git-commiter-email "prometeusss@gmail.com")
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;; Tramp Mode ;;;;;;;;;;
 (setq tramp-default-method "ssh")
